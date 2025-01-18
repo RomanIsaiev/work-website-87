@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>CRML GAMES</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,285 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <a class="header-logo" href="">crML games</a>
+          <button
+            class="mobile-menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+          >
+            <img
+              src="./src/img/header/burger-menu.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </button>
+          <ul class="navigator-list">
+            <li class="list-item">
+              <a class="nav-link" href="#about-us">about us</a>
+            </li>
+            <li class="list-item">
+              <a class="nav-link" href="#projects">projects</a>
+            </li>
+            <li class="list-item">
+              <a class="nav-link" href="#contact">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <picture>
+            <source
+              srcset="
+                ./src/img/hero/bg-1x-desktop.png 1x,
+                ./src/img/hero/bg-1x-desktop.png 2x
+              "
+            />
+            <img
+              class="hero-bg-desktop"
+              src="./src/img/hero/bg-1x-desktop.png"
+              alt="background decoration"
+            />
+          </picture>
+          <h1 class="title">
+            Welcome <br />
+            to <br />
+            CRML Games!
+          </h1>
+          <p class="desc">
+            Our mission is to create top-quality products, with a strong focus
+            on both technical execution and design. We strive to deliver
+            solutions that inspire and bring value to our users.
+          </p>
+          <a class="btn" href="">CONTACT US</a>
+        </div>
+      </section>
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <h2 class="title">About us</h2>
+          <div class="flex-container">
+            <h3 class="subtitle">
+              We are a team of professionals with over 10 years of experience in
+              software development
+            </h3>
+            <div class="desc-container">
+              <p class="accent-text">
+                Our primary focus is on creating and promoting mobile
+                applications for the Apple Store and Google Play platforms
+              </p>
+              <p class="text">
+                We develop our own games, emphasizing high-quality standards,
+                innovation, and immersive gameplay
+              </p>
+              <p class="text">
+                In addition to game development, we provide custom software
+                development services, helping businesses bring their ideas to
+                life in the digital environment. Our team also offers consulting
+                and comprehensive support for IT projects at all stages — from
+                concept to launch and ongoing maintenance
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="title">Projects</h2>
+          <div class="background-container">
+            <div class="container-inside">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/projects/mobile-mobile-1x.png 1x,
+                    ./src/img/projects/mobile-mobile-1x.png 2x
+                  "
+                  media="(max-width: 1199px)"
+                  width="240"
+                  height="427"
+                />
+                <source
+                  srcset="
+                    ./src/img/projects/mobile-desktop-1x.png 1x,
+                    ./src/img/projects/mobile-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                  width="320"
+                  height="642"
+                />
+                <img
+                  class="game-preview"
+                  src="./src/img/projects/mobile-mobile-1x.png"
+                  alt="game preview"
+                  width="240"
+                  height="427"
+                />
+              </picture>
+              <div class="wrapper">
+                <div class="game-preview-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./src/img/projects/app-game-1x.png 1x,
+                        ./src/img/projects/app-game-2x.png 2x
+                      "
+                      media="(max-width: 1199px)"
+                      width="70"
+                      height="70"
+                    />
+                    <source
+                      srcset="
+                        ./src/img/projects/app-game-1x-desktop.png 1x,
+                        ./src/img/projects/app-game-2x-desktop.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                      width="80"
+                      height="80"
+                    />
+                    <img
+                      class="game-icon"
+                      src="./src/img/projects/app-game-1x.png"
+                      alt="game icon"
+                      width="70"
+                      height="70"
+                    />
+                  </picture>
+                  <div class="name-container">
+                    <p class="name">ASTRID: Epic Zombie Shooting</p>
+                    <p class="category">Casual</p>
+                  </div>
+                </div>
+                <p class="desc">
+                  Embark on an epic journey with Astrid, a fearless girl armed
+                  with a powerful crossbow, in this thrilling action-packed
+                  game! Astrid needs your help to complete levels, defeat funny
+                  zombies, and collect shiny coins. Use your super aiming skills
+                  to shoot the zombies and watch them fall before your skill!
+                </p>
+                <div class="links-container">
+                  <a class="game-link" href="">
+                    <picture>
+                      <source
+                        srcset="
+                          ./src/img/projects/download-appstore-1x.png 1x,
+                          ./src/img/projects/download-appstore-2x.png 2x
+                        "
+                        media="(max-width: 1199px)"
+                        width="166"
+                        height="56"
+                      />
+                      <source
+                        srcset="
+                          ./src/img/projects/download-appstore-1x.png 1x,
+                          ./src/img/projects/download-appstore-2x.png 2x
+                        "
+                        media="(min-width: 1200px)"
+                        width="166"
+                        height="56"
+                      />
+                      <img
+                        class="down-icon"
+                        src="./src/img/projects/download-appstore-1x.png"
+                        alt="game icon"
+                        width="166"
+                        height="56"
+                      /> </picture
+                  ></a>
+                  <a class="game-link" href="">
+                    <picture>
+                      <source
+                        srcset="
+                          ./src/img/projects/download-google-1x.png 1x,
+                          ./src/img/projects/download-google-2x.png 2x
+                        "
+                        media="(max-width: 1199px)"
+                        width="166"
+                        height="56"
+                      />
+                      <source
+                        srcset="
+                          ./src/img/projects/download-google-1x.png 1x,
+                          ./src/img/projects/download-google-2x.png 2x
+                        "
+                        media="(min-width: 1200px)"
+                        width="166"
+                        height="56"
+                      />
+                      <img
+                        class="down-icon"
+                        src="./src/img/projects/download-google-1x.png"
+                        alt="game icon"
+                        width="166"
+                        height="56"
+                      /> </picture
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions" id="contact">
+        <div class="container">
+          <h2 class="title">Do you have any questions?</h2>
+          <a class="btn" href="">click here</a>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="./index.html">crml games</a>
+        <ul class="footer-nav">
+          <li class="list-item">
+            <a class="footer-link" href="#about-us">about us</a>
+          </li>
+          <li class="list-item">
+            <a class="footer-link" href="#projects">projects</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--------------------MOBILE-MENU------------------->
+    <div class="menu-container js-menu-container" id="mobile-menu-container">
+      <div class="mobile-menu">
+        <div class="mobile-control-container">
+          <a class="mobile-menu-logo" href="">crML games</a>
+          <button class="close-button-menu js-close-menu">
+            <img
+              class="icon-close"
+              src="./src/img/header/close-mobile-menu.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div>
+          <ul class="mobile-nav-list">
+            <li class="mobile-menu-links list-item">
+              <a class="link" href="#about-us">About us</a>
+            </li>
+            <li class="mobile-menu-links list-item">
+              <a class="link" href="#projects">projects</a>
+            </li>
+            <li class="mobile-menu-links list-item">
+              <a class="link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--------------------MOBILE-MENU-END------------------->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./src/js/mobile-menu.js"></script>
   </body>
 </html>

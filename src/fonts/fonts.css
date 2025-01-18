@@ -1,41 +1,42 @@
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-LIGHT.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-Thin.woff2);
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-Light.woff2);
   font-weight: 300;
 }
-
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-BOOK.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-Regular.woff2);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-MEDIUM.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-Medium.woff2);
   font-weight: 500;
 }
-
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-DEMI.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-SemiBold.woff2);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-BOLD.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-Bold.woff2);
   font-weight: 700;
 }
-
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-EXTRABOLD.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-ExtraBold.woff2);
   font-weight: 800;
 }
-
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-HEAVY.TTF);
+  font-family: 'Fixel Display';
+  src: url(../fonts/FixelDisplay-Black.woff2);
   font-weight: 900;
 }

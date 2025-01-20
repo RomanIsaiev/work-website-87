@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
@@ -57,11 +59,11 @@
               alt="background decoration"
             />
           </picture>
-          <h1 class="title">
+          <h1 class="main-title">
             Welcome <br />
-            to <br />
-            CRML Games!
+            to
           </h1>
+          <h1 class="title"></h1>
           <p class="desc">
             Our mission is to create top-quality products, with a strong focus
             on both technical execution and design. We strive to deliver
@@ -72,7 +74,9 @@
       </section>
       <section class="about-us" id="about-us">
         <div class="container">
-          <h2 class="title">About us</h2>
+          <h2 class="title" data-aos="fade-right" data-aos-duration="1400">
+            About us
+          </h2>
           <div class="flex-container">
             <h3 class="subtitle">
               We are a team of professionals with over 10 years of experience in
@@ -100,14 +104,16 @@
       </section>
       <section class="projects" id="projects">
         <div class="container">
-          <h2 class="title">Projects</h2>
+          <h2 class="title" data-aos="fade-right" data-aos-duration="1400">
+            Projects
+          </h2>
           <div class="background-container">
             <div class="container-inside">
               <picture>
                 <source
                   srcset="
                     ./src/img/projects/mobile-mobile-1x.png 1x,
-                    ./src/img/projects/mobile-mobile-1x.png 2x
+                    ./src/img/projects/mobile-mobile-2x.png 2x
                   "
                   media="(max-width: 1199px)"
                   width="240"
@@ -124,6 +130,9 @@
                 />
                 <img
                   class="game-preview"
+                  data-aos-offset="100"
+                  data-aos="fade-down"
+                  data-aos-duration="1400"
                   src="./src/img/projects/mobile-mobile-1x.png"
                   alt="game preview"
                   width="240"
@@ -172,7 +181,12 @@
                   to shoot the zombies and watch them fall before your skill!
                 </p>
                 <div class="links-container">
-                  <a class="game-link" href="">
+                  <a
+                    class="game-link"
+                    href="https://apps.apple.com/ua/app/astrid/id1663690078"
+                    target="_blank"
+                    rel="nofollow"
+                  >
                     <picture>
                       <source
                         srcset="
@@ -200,7 +214,12 @@
                         height="56"
                       /> </picture
                   ></a>
-                  <a class="game-link" href="">
+                  <a
+                    class="game-link"
+                    href="https://play.google.com/store/apps/details?id=com.p194.alice"
+                    target="_blank"
+                    rel="nofollow"
+                  >
                     <picture>
                       <source
                         srcset="
@@ -236,8 +255,10 @@
       </section>
       <section class="questions" id="contact">
         <div class="container">
-          <h2 class="title">Do you have any questions?</h2>
-          <a class="btn" href="">click here</a>
+          <h2 class="title" data-aos="fade-right" data-aos-duration="1400">
+            Do you have any questions?
+          </h2>
+          <a class="btn" href="mailto:crmlgames@gmail.com">click here</a>
         </div>
       </section>
     </main>
@@ -284,12 +305,17 @@
       </div>
     </div>
     <!--------------------MOBILE-MENU-END------------------->
+    <script type="module" src="./src/js/hero-text.js"></script>
+    <script type="module" src="./src/js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./src/js/mobile-menu.js"></script>
   </body>
 </html>

@@ -33,6 +33,32 @@ body {
   }
 }
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+    rotate: 0;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+    rotate: 360deg;
+  }
+}
+
+@keyframes pulseBtn {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* header */
 
 .header {
@@ -81,6 +107,13 @@ body {
   -webkit-text-fill-color: transparent;
 
   max-width: 95px;
+
+  transition: scale 250ms linear;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  scale: 1.2;
 }
 
 .mobile-menu-btn {
@@ -200,6 +233,15 @@ body {
   text-transform: uppercase;
 }
 
+.header .navigator-list .list-item {
+  transition: scale 250ms linear;
+}
+
+.header .navigator-list .list-item:hover,
+.header .navigator-list .list-item:focus {
+  scale: 1.1;
+}
+
 .header .navigator-list .list-item:nth-child(3) .nav-link {
   display: flex;
   align-items: center;
@@ -277,7 +319,7 @@ body {
   z-index: 10;
 }
 
-.hero .title {
+.hero .main-title {
   color: #fff;
   font-family: 'Fixel Display';
   font-size: 48px;
@@ -287,8 +329,44 @@ body {
   letter-spacing: -1.92px;
   text-transform: uppercase;
 
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 }
+
+.hero .title {
+  display: inline-block;
+
+  color: #fff;
+  font-family: 'Fixel Display';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 48px */
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+
+  white-space: nowrap; /* не переносить текст на другую строку */
+  overflow: hidden; /* скрываем переполнение контентом */
+  border-right: 3px solid white; /* рисуем курсор */
+  animation: cursor 0.75s step-end infinite;
+}
+
+/* hero title animation */
+
+@keyframes cursor {
+  0% {
+    border-color: white;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+
+/* end */
 
 .hero .desc {
   color: #fff;
@@ -356,6 +434,21 @@ body {
     width: 86%;
 
     z-index: -1;
+
+    animation: pulseScale 180000ms infinite linear;
+  }
+
+  .hero .main-title {
+    color: #fff;
+    font-family: 'Fixel Display';
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80%; /* 120px */
+    letter-spacing: -3px;
+    text-transform: uppercase;
+
+    /* margin-bottom: 12px; */
   }
 
   .hero .title {
@@ -796,6 +889,13 @@ body {
     max-width: 167px;
     width: 100%;
     margin: 0;
+
+    transition: scale 250ms linear;
+  }
+
+  .game-link:hover,
+  .game-link:focus {
+    scale: 1.1;
   }
 
   .game-icon {
@@ -850,6 +950,8 @@ body {
   text-transform: uppercase;
 
   margin: 0 0 0 auto;
+
+  animation: pulseBtn 2000ms infinite linear;
 }
 
 @media screen and (min-width: 1200px) {
@@ -950,12 +1052,23 @@ body {
     font-weight: 900;
     line-height: 85%; /* 15.3px */
     text-transform: uppercase;
+
+    transition: scale 250ms linear;
+  }
+
+  .footer .footer-logo:hover,
+  .footer .footer-logo:focus {
+    scale: 1.2;
   }
 
   .footer .footer-nav {
     display: flex;
     align-items: center;
     gap: 60px;
+  }
+
+  .footer .footer-nav .list-item {
+    transition: scale 250ms linear;
   }
 
   .footer .footer-link {
@@ -966,5 +1079,10 @@ body {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+  }
+
+  .footer .footer-nav .list-item:hover,
+  .footer .footer-nav .list-item:focus {
+    scale: 1.2;
   }
 }

@@ -88,7 +88,7 @@ body {
 .header-logo {
   display: block;
   font-family: 'Fixel Display';
-  font-size: 18px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 900;
   line-height: 85%; /* 15.3px */
@@ -109,11 +109,6 @@ body {
   max-width: 95px;
 
   transition: scale 250ms linear;
-}
-
-.header-logo:hover,
-.header-logo:focus {
-  scale: 1.2;
 }
 
 .mobile-menu-btn {
@@ -242,7 +237,7 @@ body {
   scale: 1.1;
 }
 
-.header .navigator-list .list-item:nth-child(3) .nav-link {
+.header .navigator-list .list-item:nth-child(4) .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,14 +259,14 @@ body {
   .header {
     padding: 20px;
 
-    position: absolute;
+    position: fixed;
     left: unset;
 
     transform: unset;
 
-    background-color: unset;
+    background-color: #090909d7;
 
-    z-index: 900;
+    z-index: 1000;
   }
 
   .mobile-menu-btn {
@@ -403,7 +398,27 @@ body {
   display: none;
 }
 
+.hero .container {
+  position: relative;
+}
+
+#about-us {
+  position: absolute;
+  bottom: -80px;
+
+  height: 0;
+  width: 0;
+
+  display: block;
+
+  /* background-color: white; */
+}
+
 @media screen and (min-width: 1200px) {
+  #about-us {
+    bottom: -80px;
+  }
+
   .hero {
     padding-top: unset;
     padding-bottom: unset;
@@ -550,7 +565,25 @@ body {
   margin-bottom: 40px;
 }
 
+.about-us .container {
+  position: relative;
+}
+
+#projects {
+  position: absolute;
+  bottom: -60px;
+
+  display: block;
+
+  width: 0;
+  height: 0;
+}
+
 @media screen and (min-width: 1200px) {
+  #projects {
+    bottom: -180px;
+  }
+
   .about-us {
     padding-bottom: 300px;
   }
@@ -1047,18 +1080,13 @@ body {
   .footer .footer-logo {
     color: #090909;
     font-family: 'Fixel Display';
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 900;
     line-height: 85%; /* 15.3px */
     text-transform: uppercase;
 
     transition: scale 250ms linear;
-  }
-
-  .footer .footer-logo:hover,
-  .footer .footer-logo:focus {
-    scale: 1.2;
   }
 
   .footer .footer-nav {

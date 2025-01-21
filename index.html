@@ -16,7 +16,7 @@
     <header class="header">
       <div class="container">
         <div class="header-container">
-          <a class="header-logo" href="./index.html">crML games</a>
+          <a class="header-logo" href="#home">crML games</a>
           <button
             class="mobile-menu-btn js-open-menu"
             aria-expanded="false"
@@ -31,6 +31,9 @@
           </button>
           <ul class="navigator-list">
             <li class="list-item">
+              <a class="nav-link" href="#home">home</a>
+            </li>
+            <li class="list-item">
               <a class="nav-link" href="#about-us">about us</a>
             </li>
             <li class="list-item">
@@ -44,7 +47,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <picture>
             <source
@@ -70,9 +73,10 @@
             solutions that inspire and bring value to our users.
           </p>
           <a class="btn" href="#contact">CONTACT US</a>
+          <div id="about-us"></div>
         </div>
       </section>
-      <section class="about-us" id="about-us">
+      <section class="about-us">
         <div class="container">
           <h2 class="title" data-aos="fade-right" data-aos-duration="1400">
             About us
@@ -100,9 +104,10 @@
               </p>
             </div>
           </div>
+          <div id="projects"></div>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects">
         <div class="container">
           <h2 class="title" data-aos="fade-right" data-aos-duration="1400">
             Projects
@@ -280,7 +285,9 @@
     <div class="menu-container js-menu-container" id="mobile-menu-container">
       <div class="mobile-menu">
         <div class="mobile-control-container">
-          <a class="mobile-menu-logo" href="./index.html">crML games</a>
+          <a class="mobile-menu-logo mobile-menu-links" href="#home"
+            >crML games</a
+          >
           <button class="close-button-menu js-close-menu">
             <img
               class="icon-close"
@@ -307,6 +314,7 @@
     <!--------------------MOBILE-MENU-END------------------->
     <script type="module" src="./src/js/hero-text.js"></script>
     <script type="module" src="./src/js/mobile-menu.js"></script>
+    <script type="module" src="./src/js/remove-archor.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
